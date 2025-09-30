@@ -1,7 +1,17 @@
 name: hello world
 on: push
 jobs:
+  build:
+    name: my build
+    runs-on: ubuntu-18.04
+    steps:
+      -name: clone source code
+        run: |
+          git clone https://github.com/zhangfei829/mytest.git
+          cd mytest
+          make     
   test:
+    name: my test
     runs-on: ubuntu-latest
     steps:
         #- uses: actions/checkout@v4
