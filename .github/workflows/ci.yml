@@ -3,7 +3,7 @@ on: push
 jobs:
   build:
     name: my build
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: clone source code
         run: git clone https://github.com/zhangfei829/mytest.git
