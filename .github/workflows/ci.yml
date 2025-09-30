@@ -3,16 +3,18 @@ on: push
 jobs:
   build:
     name: my build
-    runs-on: ubuntu-latest
+    runs-on: first_label
     steps:
       - name: clone source code
         run: |
+          pwd
+          hostname
           git clone https://github.com/zhangfei829/mytest.git
           cd mytest
           make     
   test:
     name: my test
-    runs-on: ubuntu-latest
+    runs-on: first_label
     steps:
         #- uses: actions/checkout@v4
         #- name: Set up Python
