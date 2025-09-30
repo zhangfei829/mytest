@@ -27,4 +27,6 @@ jobs:
       - name: Run tests
         run: |
           cd mytest
-          python test.py
+          ls
+          #python test.py
+          bash test.sh
